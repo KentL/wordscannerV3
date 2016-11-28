@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grungy_blue_texture_by_waitq-d6u7g9q" translatesAutoresizingMaskIntoConstraints="NO" id="C4e-Ct-rXo">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Scanner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQu-Wg-IGj">
+                                <rect key="frame" x="190" y="493" width="221" height="42"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="jJn-3p-few">
+                                <rect key="frame" x="251" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="WQH-pR-W73"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99960672686621932" green="1" blue="0.6056372729809254" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="C4e-Ct-rXo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4CT-vc-xft"/>
+                            <constraint firstItem="C4e-Ct-rXo" firstAttribute="centerY" secondItem="jJn-3p-few" secondAttribute="centerY" id="7dt-zJ-xLG"/>
+                            <constraint firstItem="jJn-3p-few" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="230" id="Ed1-Cn-90k"/>
+                            <constraint firstItem="C4e-Ct-rXo" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="IMo-iA-Jj3"/>
+                            <constraint firstItem="jJn-3p-few" firstAttribute="centerX" secondItem="rQu-Wg-IGj" secondAttribute="centerX" id="Orh-xr-NQs"/>
+                            <constraint firstItem="C4e-Ct-rXo" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="XXh-dU-qBp"/>
+                            <constraint firstAttribute="trailing" secondItem="C4e-Ct-rXo" secondAttribute="trailing" id="a0Y-4L-F2c"/>
+                            <constraint firstItem="C4e-Ct-rXo" firstAttribute="centerX" secondItem="rQu-Wg-IGj" secondAttribute="centerX" id="duW-YP-EmH"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="rQu-Wg-IGj" secondAttribute="bottom" constant="65" id="pg5-z6-IeN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="76" height="76"/>
+        <image name="grungy_blue_texture_by_waitq-d6u7g9q" width="853" height="640"/>
+    </resources>
+</document>
