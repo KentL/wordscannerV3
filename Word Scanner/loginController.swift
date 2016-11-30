@@ -44,7 +44,7 @@ class loginController: UIViewController {
     @IBOutlet weak var usernameError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
     
-    @IBAction func signup(sender: UIButton)
+    func signup()
     {
         let appDel:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
         let context:NSManagedObjectContext = appDel.managedObjectContext
@@ -152,7 +152,7 @@ class loginController: UIViewController {
 
         
     }
-    @IBAction func login(sender: UIButton)
+    func login()
     {
         let appDel:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
         let context:NSManagedObjectContext = appDel.managedObjectContext
@@ -215,7 +215,7 @@ class loginController: UIViewController {
                         
                         print("Login Successful")
                         check=true
-                        
+                    
                     }
                 }
                                 
@@ -233,15 +233,13 @@ class loginController: UIViewController {
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool
     {
-        
-        if check == true
-        {
-            return true
+        if identifier == "loginSegue" {
+            login()
         }
-        else
-        {
-            return false
+        else if identifier == "signupSegue"{
+            signup()
         }
+        return check
         
     }
     
